@@ -1,0 +1,178 @@
+{
+  "$comment": "Generated. Python also enforces semantic, path and finite-number gates.",
+  "$id": "https://github.com/Xiaomiju-x/rdk-frontier-lab/raw/main/schemas/result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "algorithm_id": {
+      "pattern": "^[a-z0-9][a-z0-9_.-]{0,95}$",
+      "type": "string"
+    },
+    "artifact_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "artifact_suffix": {
+      "enum": [
+        ".bin",
+        ".hbm",
+        ".onnx",
+        ".json",
+        ".py"
+      ]
+    },
+    "backend": {
+      "enum": [
+        "CPU",
+        "BPU",
+        "HYBRID"
+      ]
+    },
+    "contract_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "deterministic": {
+      "type": "boolean"
+    },
+    "evidence_kind": {
+      "enum": [
+        "synthetic_demo",
+        "machine_observation"
+      ]
+    },
+    "fixture_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "hardware_observed": {
+      "type": "boolean"
+    },
+    "latencies_ms": {
+      "items": {
+        "exclusiveMinimum": 0,
+        "type": "number"
+      },
+      "maxItems": 100000,
+      "type": "array"
+    },
+    "march": {
+      "enum": [
+        "host",
+        "bayes-e",
+        "nash-e",
+        "nash-p"
+      ]
+    },
+    "measurement_scope": {
+      "enum": [
+        "model_call",
+        "file_to_file",
+        "process",
+        "not_measured"
+      ]
+    },
+    "negative_inputs_rejected": {
+      "type": "boolean"
+    },
+    "output_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-z0-9][a-z0-9_.-]{0,95}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "stages": {
+      "additionalProperties": false,
+      "properties": {
+        "cleanup": {
+          "enum": [
+            "BLOCKED",
+            "FAIL",
+            "NOT_RUN",
+            "PASS"
+          ]
+        },
+        "compile": {
+          "enum": [
+            "BLOCKED",
+            "FAIL",
+            "NOT_RUN",
+            "PASS"
+          ]
+        },
+        "execution": {
+          "enum": [
+            "BLOCKED",
+            "FAIL",
+            "NOT_RUN",
+            "PASS"
+          ]
+        },
+        "numeric": {
+          "enum": [
+            "BLOCKED",
+            "FAIL",
+            "NOT_RUN",
+            "PASS"
+          ]
+        },
+        "task": {
+          "enum": [
+            "BLOCKED",
+            "FAIL",
+            "NOT_RUN",
+            "PASS"
+          ]
+        }
+      },
+      "required": [
+        "compile",
+        "execution",
+        "numeric",
+        "task",
+        "cleanup"
+      ],
+      "type": "object"
+    },
+    "target": {
+      "enum": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "algorithm_id",
+    "target",
+    "march",
+    "backend",
+    "evidence_kind",
+    "source_sha256",
+    "fixture_sha256",
+    "contract_sha256",
+    "artifact_sha256",
+    "artifact_suffix",
+    "stages",
+    "hardware_observed",
+    "deterministic",
+    "negative_inputs_rejected",
+    "measurement_scope",
+    "latencies_ms",
+    "output_sha256"
+  ],
+  "type": "object"
+}

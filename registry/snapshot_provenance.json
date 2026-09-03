@@ -1,0 +1,11 @@
+{
+  "projection": "Explicit metadata allowlist; raw source files withheld.",
+  "raw_evidence_bundled": false,
+  "schema_version": 1,
+  "snapshot": "2026-09-03T16:36:05+08:00",
+  "source_hashes": {
+    "candidates.yaml": "ce2392f59d2d3a35b36c5be01a3a6dca4ed07fdf6f4ddc5d0e9463400b50ae76",
+    "license_matrix.yaml": "1a1da4b30831bbd1a3b8cfef2c95e28e3186f5c75ee694f2d50ee8b88f015f48",
+    "source_lock.yaml": "a25fc902770735402b7ce02d6225efed2703936bcdbefb753e07e9d84abd5c0b"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "files": [
+    {
+      "path": "values.json",
+      "sha256": "b3e4e684912be90281f59c2a41436d89dd1fe4120954938d8414d8c5c4a40b7d",
+      "size_bytes": 168
+    }
+  ],
+  "fixture_id": "scalar-relu-reference-v1",
+  "schema_version": 1
+}

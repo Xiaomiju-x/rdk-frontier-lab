@@ -1,0 +1,782 @@
+{
+  "entries": [
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_rdk_model_zoo_x5",
+      "pin_kind": "commit",
+      "recorded_revision": "7c1eb5393412df1f6d18a97f97c8c086e9ae4b94",
+      "ref_at_recording": "rdk_x5",
+      "url": "https://github.com/D-Robotics/rdk_model_zoo.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_rdk_model_zoo_s",
+      "pin_kind": "commit",
+      "recorded_revision": "872748d563c99a490733760c54865b2a70f3499f",
+      "ref_at_recording": "rdk_s",
+      "url": "https://github.com/D-Robotics/rdk_model_zoo.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_rdk_model_zoo_s100_legacy",
+      "pin_kind": "commit",
+      "recorded_revision": "aeed911b157866e0e8a8efa6f134a8c93e731af0",
+      "ref_at_recording": "s100",
+      "url": "https://github.com/D-Robotics/rdk_model_zoo_s.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "d_fine",
+      "pin_kind": "commit",
+      "recorded_revision": "956d1709314c2c6a4df6f34de232054578a7449f",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/Peterande/D-FINE.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "d_fine_storage_release",
+      "pin_kind": "commit",
+      "recorded_revision": "39a3115d4b1183b9035e333e57655f018272ebbe",
+      "ref_at_recording": "dfinev1.0",
+      "url": "https://github.com/Peterande/storage.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "pidnet",
+      "pin_kind": "commit",
+      "recorded_revision": "4c158cf24ce432f0a8cb43364fae38d93cee0dc3",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/XuJiacong/PIDNet.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "mmpose",
+      "pin_kind": "commit",
+      "recorded_revision": "759b39c13fea6ba094afc1fa932f51dc1b11cbf9",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/open-mmlab/mmpose.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "anomalib",
+      "pin_kind": "commit",
+      "recorded_revision": "0b7fdb9dde453f6474ac93f77188f4224d442999",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/open-edge-platform/anomalib.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "granite_tsfm",
+      "pin_kind": "commit",
+      "recorded_revision": "fe7a35697723e2a2f5246ae979474bfc554e26c0",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/ibm-granite/granite-tsfm.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "moonshine",
+      "pin_kind": "commit",
+      "recorded_revision": "234f60faa0eb388b01cdf7e60aca232af37aefda",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/moonshine-ai/moonshine.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "big_vision",
+      "pin_kind": "commit",
+      "recorded_revision": "0127fb6b337ee2a27bf4e54dea79cff176527356",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/google-research/big_vision.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "openai_clip",
+      "pin_kind": "commit",
+      "recorded_revision": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/openai/CLIP.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "paddleocr",
+      "pin_kind": "commit",
+      "recorded_revision": "2661c7c0ef5c613e8f93c6e93b2e052399f0f854",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "efficient_sam_upstream_observed",
+      "pin_kind": "commit",
+      "recorded_revision": "d525f622e6f640acf5a0fc37c7ca1f243da5bde0",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/yformer/EfficientSAM.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_mono_pwcnet",
+      "pin_kind": "commit",
+      "recorded_revision": "e0a91ea898b0950c15a50ec221772fd227f5d76f",
+      "ref_at_recording": "develop",
+      "url": "https://github.com/D-Robotics/mono_pwcnet.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_reid",
+      "pin_kind": "commit",
+      "recorded_revision": "41dac22aff58ce86ddb4b8c4c556505acd69f237",
+      "ref_at_recording": "tros_0.3.0",
+      "url": "https://github.com/D-Robotics/reid.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_stereonet",
+      "pin_kind": "commit",
+      "recorded_revision": "302a8c9d002c6e3a1010a7322ffd2fdbd94810de",
+      "ref_at_recording": "tros_2.5.5",
+      "url": "https://github.com/D-Robotics/hobot_stereonet.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_hobot_dosod",
+      "pin_kind": "commit",
+      "recorded_revision": "c949d69898926054ac3be5793fdd4a482da685c9",
+      "ref_at_recording": "tros_1.0.0",
+      "url": "https://github.com/D-Robotics/hobot_dosod.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_hobot_centerpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "56f2fdf7aa0edeac8bb7db715d54ee49b6008fbd",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/D-Robotics/hobot_centerpoint.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_drobotics_tros_mot",
+      "pin_kind": "commit",
+      "recorded_revision": "660aef13058700d5c8aa4d00892751199e5aff24",
+      "ref_at_recording": "develop",
+      "url": "https://github.com/D-Robotics/tros_mot.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "drobotics_ai_lab_dosod_training",
+      "pin_kind": "commit",
+      "recorded_revision": "2b133c3a9f7a9b685635090d219efa84a6951e75",
+      "ref_at_recording": "v1.0.0",
+      "url": "https://github.com/D-Robotics-AI-Lab/DOSOD.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "openmmlab_videomaev2",
+      "pin_kind": "commit",
+      "recorded_revision": "29eab1e8a588d1b3ec0cdec7b03a86cca491b74b",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/OpenGVLab/VideoMAEv2.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "openmmlab_videomaev2_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "706cc172d65ebd4dedbee3f9c0183a93df9fa125",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/OpenGVLab/VideoMAE2"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "moonshine_voice_pypi_0_1_5",
+      "pin_kind": "metadata_reference_not_commit",
+      "recorded_revision": "PYPI_IMMUTABLE_FILE_HASHES",
+      "ref_at_recording": "0.1.5",
+      "url": "https://pypi.org/pypi/moonshine-voice/0.1.5/json"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "granite_ttm_r2_1_512_96_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "ffbf23413bef2354370a8a336576ba5b2122f800",
+      "ref_at_recording": "512-96-ft-r2.1",
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "google_siglip2_base_patch32_256_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/google/siglip2-base-patch32-256"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "depth_anything_3",
+      "pin_kind": "commit",
+      "recorded_revision": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/ByteDance-Seed/Depth-Anything-3.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "depth_anything_3_small_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "e08cab65ca0ec38e7826075418411ab90cab4da3",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/depth-anything/DA3-SMALL"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "depth_anything_v2",
+      "pin_kind": "commit",
+      "recorded_revision": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "depth_anything_v2_small_hf_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "cvg_lightglue",
+      "pin_kind": "commit",
+      "recorded_revision": "eb42fee2d71449efb0aa5c10549752b5d75384d8",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/cvg/LightGlue.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "lightglue_onnx_adapter",
+      "pin_kind": "commit",
+      "recorded_revision": "d12b4ba1632f558234e3f084e1f3d8bdf9147890",
+      "ref_at_recording": "v3.0.0",
+      "url": "https://github.com/fabio-sim/LightGlue-ONNX.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "cvg_glue_factory_open_superpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "2d17e3b3bd7d30f0c828d4c4d3eac4ecefbf283d",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/cvg/glue-factory.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "rpautrat_open_superpoint_v6_weight",
+      "pin_kind": "commit",
+      "recorded_revision": "1411bbd68c50163555d39c1b26e9e046ebd48f27",
+      "ref_at_recording": "master",
+      "url": "https://raw.githubusercontent.com/rpautrat/SuperPoint/1411bbd68c50163555d39c1b26e9e046ebd48f27/weights/superpoint_v6_from_tf.pth"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "huggingfacetb_smolvlm2_256m_video_instruct",
+      "pin_kind": "commit",
+      "recorded_revision": "067788b187b95ebe7b2e040b3e4299e342e5b8fd",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM2-256M-Video-Instruct"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_edgetam",
+      "pin_kind": "commit",
+      "recorded_revision": "7711e012a30a2402c4eaab637bdb00a521302c91",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/EdgeTAM.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "drobotics_ai_lab_edgetam_ptq",
+      "pin_kind": "commit",
+      "recorded_revision": "353c9a8de48baa51369a5064435da859b8d80765",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/D-Robotics-AI-Lab/EdgeTAM_PTQ.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_nanosam",
+      "pin_kind": "commit",
+      "recorded_revision": "653633614b2eb93b06ba3be9adb2aeffb117bd72",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVIDIA-AI-IOT/nanosam.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "official_mobilesam",
+      "pin_kind": "commit",
+      "recorded_revision": "f706ad9c4eb7f219c00d9050e46328518ffb65d2",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/ChaoningZhang/MobileSAM.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "prbonn_lidar_bonnetal",
+      "pin_kind": "commit",
+      "recorded_revision": "99b827f0228ff0e997473ac8e2cecbaa4af7d7c7",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/PRBonn/lidar-bonnetal.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "prbonn_rangenet_lib",
+      "pin_kind": "commit",
+      "recorded_revision": "3fc223ea31251dc4380f6a0013c271d408a5eefa",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/PRBonn/rangenet_lib.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "qualcomm_ai_hub_models_rangenetpp",
+      "pin_kind": "commit",
+      "recorded_revision": "5347a3b0f00e11c21ede1be7b88b19d336b970c0",
+      "ref_at_recording": "v0.60.0",
+      "url": "https://github.com/quic/ai-hub-models.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_cotracker3",
+      "pin_kind": "commit",
+      "recorded_revision": "82e02e8029753ad4ef13cf06be7f4fc5facdda4d",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/co-tracker.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_cotracker3_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "bf55ea50d4390e1820a267f131cd6587240fb2c5",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/cotracker3"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "google_deepmind_tapnet",
+      "pin_kind": "commit",
+      "recorded_revision": "c2cbab81cc06092b5f05bfe2da7bfec54e2079c9",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/google-deepmind/tapnet.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "mit_han_bevfusion",
+      "pin_kind": "commit",
+      "recorded_revision": "326653dc06e0938edf1aae7d01efcd158ba83de5",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/mit-han-lab/bevfusion.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_lidar_ai_solution_cuda_bevfusion",
+      "pin_kind": "commit",
+      "recorded_revision": "7c1623f234d5a9794fd862c9456f68f87ae7b900",
+      "ref_at_recording": "master",
+      "url": "https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "openmmlab_mmdetection3d_bevfusion",
+      "pin_kind": "commit",
+      "recorded_revision": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "ref_at_recording": "main",
+      "url": "https://github.com/open-mmlab/mmdetection3d.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "huggingface_lerobot_smolvla",
+      "pin_kind": "commit",
+      "recorded_revision": "4aaff99be4a1d81568c08c8f0296b41b40c99ec4",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/huggingface/lerobot.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "lerobot_smolvla_base_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/lerobot/smolvla_base"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "huggingfacetb_smolvlm2_500m_architecture_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvlabs_foundationpose",
+      "pin_kind": "commit",
+      "recorded_revision": "a1b694b83e633c2cb6115b9063d940a687759392",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVlabs/FoundationPose.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvlabs_nvdiffrast",
+      "pin_kind": "commit",
+      "recorded_revision": "253ac4fcea7de5f396371124af597e6cc957bfae",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVlabs/nvdiffrast.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_isaac_ros_pose_estimation",
+      "pin_kind": "commit",
+      "recorded_revision": "89bb4cb850d67d579f65b13ec9501c4ac3203b5c",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_ngc_foundationpose_metadata",
+      "pin_kind": "metadata_reference_not_commit",
+      "recorded_revision": "NGC_API_METADATA_LOCK",
+      "ref_at_recording": "deployable_v1.0",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/tao/models/foundationpose/"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_vggt",
+      "pin_kind": "commit",
+      "recorded_revision": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/vggt.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_vggt_1b_commercial_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "ebb29a532abe92960eeb6903a5530f16990ef4ab",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/VGGT-1B-Commercial"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_vggt_1b_original_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/VGGT-1B"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "mast3r_slam_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "e6f4e3d474fad0e11f561482012be864ba8c3f17",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/rmurai0610/MASt3R-SLAM.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "opencv_4_12",
+      "pin_kind": "commit",
+      "recorded_revision": "49486f61fb25722cbcf586b7f4320921d46fb38e",
+      "ref_at_recording": "4.12.0",
+      "url": "https://github.com/opencv/opencv.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "opencv_python_4_12_0_88",
+      "pin_kind": "commit",
+      "recorded_revision": "fa742a47d3993e45502dff54d96af6a4efb65153",
+      "ref_at_recording": "88",
+      "url": "https://github.com/opencv/opencv-python.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_isaac_groot_n1_7",
+      "pin_kind": "commit",
+      "recorded_revision": "51d4c89f72fda44cbf77285c6a8114b52676b8a1",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_groot_n1_7_3b_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "2fc962b973bccdd5d8ce4f67cc63b264d6886495",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/nvidia/GR00T-N1.7-3B"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_cosmos_reason2_2b_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "9ce19a195e423419c349abfc86fd07178b230561",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/nvidia/Cosmos-Reason2-2B"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_groot_x_embodiment_sim_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "ea7ac0b68f87da62f1e726771bba0fe74300802f",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "physical_intelligence_openpi",
+      "pin_kind": "commit",
+      "recorded_revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/Physical-Intelligence/openpi.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "physical_intelligence_pi07_release_metadata",
+      "pin_kind": "metadata_reference_not_commit",
+      "recorded_revision": "OFFICIAL_BLOG_AND_PAPER_METADATA_LOCK",
+      "ref_at_recording": "2026-04-16",
+      "url": "https://www.pi.website/blog/pi07"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_sam3_1",
+      "pin_kind": "commit",
+      "recorded_revision": "660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/sam3.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_sam3_1_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/sam3.1"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_vjepa2_1",
+      "pin_kind": "commit",
+      "recorded_revision": "204698b45b3712590f06245fbfba32d3be539812",
+      "ref_at_recording": "main",
+      "url": "https://github.com/facebookresearch/vjepa2.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvlabs_sana_video2",
+      "pin_kind": "commit",
+      "recorded_revision": "6c3aeea94945692a902df8db25327eba040b5d91",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVlabs/Sana.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "sana_video2_5b_720p_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "f2d95fa06400f186fd1b077d12c69c8ac58aba48",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "ascend_modelzoo_pytorch_swinir",
+      "pin_kind": "commit",
+      "recorded_revision": "6a2804a358a5b18e3dac1ab902f41f88e240b00f",
+      "ref_at_recording": "master",
+      "url": "https://github.com/Ascend/ModelZoo-PyTorch.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "upstream_swinir",
+      "pin_kind": "commit",
+      "recorded_revision": "9b1a9bf5d1df3b18c32a49ea82f60c313d779f7d",
+      "ref_at_recording": "main",
+      "url": "https://github.com/JingyunLiang/SwinIR.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "mindediting_basicvsrpp_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "f76f4190736d1f1311fd632b38eccf7736536b7c",
+      "ref_at_recording": "master",
+      "url": "https://gitee.com/mindspore-lab/mindediting.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "drobotics_hobot_xlm",
+      "pin_kind": "commit",
+      "recorded_revision": "cd9901f51cd3107b118fe2f8783c7c45af83d33f",
+      "ref_at_recording": "develop",
+      "url": "https://github.com/D-Robotics/hobot_xlm.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "drobotics_deepseek_r1_distill_qwen_1_5b_bpu",
+      "pin_kind": "commit",
+      "recorded_revision": "fd388af8de69580a985e7fb49623a1ae78a4853c",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/D-Robotics/DeepSeek-R1-Distill-Qwen-1.5B-BPU"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "deepseek_r1_upstream",
+      "pin_kind": "commit",
+      "recorded_revision": "0cf78561f1d51c84a21b2190626b21116d5c68bb",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_dinov3",
+      "pin_kind": "commit",
+      "recorded_revision": "6876159a11b4df116f30f667f8c9888617df0751",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/dinov3.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_dinov3_vits16_lvd1689m_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "114c1379950215c8b35dfcd4e90a5c251dde0d32",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "apple_ml_mobileclip2",
+      "pin_kind": "commit",
+      "recorded_revision": "aecfb5453d022e9deff12f81a150ea8f35194baa",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/apple/ml-mobileclip.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "apple_mobileclip2_s0_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "3136ea51c8ed56b9f9abfab04cb816735aaad6cb",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/apple/MobileCLIP2-S0"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "qwen_audio_sensevoice_v1_0_0",
+      "pin_kind": "commit",
+      "recorded_revision": "05ecb6ef037640b57851d8b32403a7ffb81b019c",
+      "ref_at_recording": "v1.0.0",
+      "url": "https://github.com/QwenAudio/SenseVoice.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "qwen_audio_sensevoice_current",
+      "pin_kind": "commit",
+      "recorded_revision": "eee0de09270b50d69e40b61434326e3fddefce3a",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/QwenAudio/SenseVoice.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "modelscope_funasr_v1_4_9",
+      "pin_kind": "commit",
+      "recorded_revision": "c7ec8bd007cce08143fb538ebe7ae8e40504ea1f",
+      "ref_at_recording": "v1.4.9",
+      "url": "https://github.com/modelscope/FunASR.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "funaudiollm_sensevoice_small_checkpoint",
+      "pin_kind": "commit",
+      "recorded_revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvlabs_mambavision",
+      "pin_kind": "commit",
+      "recorded_revision": "7860a506b2eb844eaaae676f08461ce8c3c26f43",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVlabs/MambaVision.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_mambavision_t_1k_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "b1de77e17599566d98efb701c0231b1095dc3a67",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/nvidia/MambaVision-T-1K"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "state_spaces_mamba",
+      "pin_kind": "commit",
+      "recorded_revision": "e9594ce1c732d97440f0332fdc43170a2294dbfa",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/state-spaces/mamba.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "apple_ml_fastvlm",
+      "pin_kind": "commit",
+      "recorded_revision": "592b4add3c1c8a518e77d95dc6248e76c1dd591f",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/apple/ml-fastvlm.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "apple_fastvlm_0_5b_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "16375720c2d673fa583e57e9876afde27549c7d0",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/apple/FastVLM-0.5B"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_sam_audio",
+      "pin_kind": "commit",
+      "recorded_revision": "bb4c6999d2677c7402360e426afc01ddfad6dce0",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/facebookresearch/sam-audio.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "meta_sam_audio_small_checkpoint_metadata",
+      "pin_kind": "commit",
+      "recorded_revision": "20b65f56888142eebe7c37448c6f6b3b32600e9b",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/facebook/sam-audio-small"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "nvidia_nanoowl",
+      "pin_kind": "commit",
+      "recorded_revision": "fb553dee4c58f8c53ec2bf01f355a54648e67dbd",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/NVIDIA-AI-IOT/nanoowl.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "google_research_scenic_owlv2",
+      "pin_kind": "commit",
+      "recorded_revision": "a179cefc7fd0a48676c15aa45b31c469e0dfc07d",
+      "ref_at_recording": "HEAD",
+      "url": "https://github.com/google-research/scenic.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "huggingface_transformers_v5_16_1",
+      "pin_kind": "commit",
+      "recorded_revision": "93c8b7b485963a10800c91f55304db6be211c2bd",
+      "ref_at_recording": "v5.16.1",
+      "url": "https://github.com/huggingface/transformers.git"
+    },
+    {
+      "fetched_by_public_tooling": false,
+      "id": "google_owlv2_base_patch16_ensemble",
+      "pin_kind": "commit",
+      "recorded_revision": "cfd3195ba4ea9592eec887ded089f4c08eff231d",
+      "ref_at_recording": "main",
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Recorded source references, not an asset download or license authorization."
+}

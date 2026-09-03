@@ -1,0 +1,124 @@
+{
+  "$comment": "Generated. Python also enforces semantic, path and finite-number gates.",
+  "$id": "https://github.com/Xiaomiju-x/rdk-frontier-lab/raw/main/schemas/catalogue.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "counting_unit": {
+      "const": "registry_entry_not_unique_model_or_success_count"
+    },
+    "entries": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bundled_full_upstream_model": {
+            "const": false
+          },
+          "direction": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_level": {
+            "const": "maintainer_reported_private_run"
+          },
+          "group": {
+            "enum": [
+              "official",
+              "frontier",
+              "research"
+            ]
+          },
+          "id": {
+            "pattern": "^[OCF][0-9]+$",
+            "type": "string"
+          },
+          "intended_targets": {
+            "items": {
+              "enum": [
+                "host",
+                "x5",
+                "s100",
+                "s600"
+              ]
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "observed_status": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "scope_note": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "group",
+          "direction",
+          "intended_targets",
+          "observed_status",
+          "scope_note",
+          "evidence_level",
+          "bundled_full_upstream_model"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "overlaps": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "ids": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 2,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "reason": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ids",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "publication_scope": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "as_of",
+    "counting_unit",
+    "publication_scope",
+    "entries",
+    "overlaps"
+  ],
+  "type": "object"
+}

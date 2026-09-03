@@ -1,0 +1,19 @@
+name: Tooling bug
+description: A reproducible bug in the public tools or documentation
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic inputs. Do not attach secrets, private endpoints or raw internal logs. Security reports belong in private vulnerability reporting."
+  - type: input
+    id: version
+    attributes: {label: Package version and Python version}
+    validations: {required: true}
+  - type: textarea
+    id: reproduce
+    attributes: {label: Minimal reproduction, description: "Command and a small public-safe input."}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected and actual behaviour}
+    validations: {required: true}

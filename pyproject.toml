@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rdk-frontier-lab"
+version = "0.1.0"
+description = "Evidence-first, offline-first algorithm portability tools for RDK X5, S100 and S600"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "LICENSES/*.txt", "recipes/weighted_kabsch_6d/LICENSE"]
+authors = [{name = "Xiaomiju-x"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Testing",
+]
+keywords = ["rdk", "bpu", "edge-ai", "reproducibility", "quantization"]
+
+[project.scripts]
+rdk-lab = "rdk_lab.cli:main"
+
+[project.optional-dependencies]
+geometry = ["numpy>=1.24,<3"]
+
+[project.urls]
+Homepage = "https://github.com/Xiaomiju-x/rdk-frontier-lab"
+Documentation = "https://github.com/Xiaomiju-x/rdk-frontier-lab/tree/main/docs"
+Issues = "https://github.com/Xiaomiju-x/rdk-frontier-lab/issues"
+Changelog = "https://github.com/Xiaomiju-x/rdk-frontier-lab/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+include = ["rdk_lab*"]
+
+[tool.setuptools.package-data]
+rdk_lab = ["data/*.json", "py.typed"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.coverage.run]
+branch = true
+source = ["rdk_lab"]
+omit = ["rdk_lab/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+exclude_also = ["if __name__ == .__main__.:"]

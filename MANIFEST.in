@@ -1,0 +1,18 @@
+include LICENSE NOTICE THIRD_PARTY_NOTICES.md
+include README.md README.zh-CN.md pyproject.toml requirements-dev.txt
+include CONTRIBUTING.md GOVERNANCE.md SECURITY.md CODE_OF_CONDUCT.md SUPPORT.md
+include ROADMAP.md CHANGELOG.md CITATION.cff
+include .editorconfig .gitignore .gitattributes
+recursive-include rdk_lab *.py *.json py.typed
+recursive-include LICENSES *.txt
+recursive-include docs *.md *.svg
+recursive-include examples *.py *.json *.md
+recursive-include recipes *.py *.md LICENSE
+recursive-include registry *.json
+recursive-include reports *.json *.md
+recursive-include schemas *.json
+recursive-include tools *.py
+recursive-include tests *.py
+recursive-include templates *.md
+recursive-include .github *.yml *.md CODEOWNERS
+global-exclude *.py[cod] *.partial *.log .env .env.*

@@ -1,0 +1,6 @@
+{
+  "fixture_id": "scalar-relu-reference-v1",
+  "license": "CC0-1.0",
+  "input": [-2.0, -1.0, 0.0, 1.0, 2.0, 3.0],
+  "golden": [0.0, 0.0, 0.125, 0.625, 1.125, 1.625]
+}

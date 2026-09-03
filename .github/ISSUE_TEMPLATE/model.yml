@@ -1,0 +1,22 @@
+name: Algorithm migration
+description: Propose a precise model and target, or contribute a failed migration
+title: "[Model] "
+body:
+  - type: input
+    id: source
+    attributes: {label: Exact upstream model and immutable revision}
+    validations: {required: true}
+  - type: dropdown
+    id: target
+    attributes:
+      label: First target
+      options: [Host CPU, X5, S100, S600]
+    validations: {required: true}
+  - type: textarea
+    id: rights
+    attributes: {label: Code, weight, data and dependency terms, description: "Link to exact upstream terms; do not upload model files."}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Current evidence and intended acceptance criteria}
+    validations: {required: true}

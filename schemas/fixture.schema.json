@@ -1,0 +1,51 @@
+{
+  "$comment": "Generated. Python also enforces semantic, path and finite-number gates.",
+  "$id": "https://github.com/Xiaomiju-x/rdk-frontier-lab/raw/main/schemas/fixture.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "files": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size_bytes": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "path",
+          "size_bytes",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "maxItems": 10000,
+      "minItems": 1,
+      "type": "array"
+    },
+    "fixture_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "fixture_id",
+    "files"
+  ],
+  "type": "object"
+}

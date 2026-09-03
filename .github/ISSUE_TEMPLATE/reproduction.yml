@@ -1,0 +1,16 @@
+name: Independent reproduction
+description: Report what you reproduced and where results differ
+title: "[Reproduction] "
+body:
+  - type: input
+    id: version
+    attributes: {label: Release or commit and recipe ID}
+    validations: {required: true}
+  - type: textarea
+    id: environment
+    attributes: {label: Public-safe environment, description: "Board/runtime/compiler versions, not device addresses or user identities."}
+    validations: {required: true}
+  - type: textarea
+    id: result
+    attributes: {label: Exact commands, input provenance, results and differences}
+    validations: {required: true}

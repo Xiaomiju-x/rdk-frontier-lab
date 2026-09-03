@@ -1,0 +1,18 @@
+RDK Frontier Lab
+Copyright 2026 Xiaomiju-x and contributors
+
+First-party core tooling is licensed under Apache License 2.0.
+rdk_lab/geometry.py and recipes/weighted_kabsch_6d/neural_reference.py are derived
+from the laboratory's first-party C14 geometry/scorer components. They retain
+the MIT terms and attribution in recipes/weighted_kabsch_6d/LICENSE.
+
+The six-number scalar fixture in rdk_lab/data/demo_fixture.json and the analytic
+geometry inputs in examples/geometry_demo.py are first-party synthetic data,
+dedicated under CC0 1.0 (see LICENSES/CC0-1.0.txt).
+
+RDK, D-Robotics, BPU, NVIDIA, Ascend and all model/project names belong to their
+respective owners. References identify compatibility targets and research
+subjects, not affiliation, endorsement or a grant over third-party assets.
+
+No third-party model weights, vendor runtime binaries, source repositories,
+private logs or original third-party datasets are distributed with this release.

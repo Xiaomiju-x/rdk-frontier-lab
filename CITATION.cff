@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these tools or research observations, cite the version and the specific result scope."
+type: software
+title: "RDK Frontier Lab"
+version: 0.1.0
+date-released: 2026-09-03
+authors:
+  - family-names: Xiaomiju-x
+repository-code: "https://github.com/Xiaomiju-x/rdk-frontier-lab"
+url: "https://github.com/Xiaomiju-x/rdk-frontier-lab"
+license: Apache-2.0
+abstract: "Offline-first tooling and evidence-bounded algorithm portability research for RDK X5, S100 and S600."
+keywords:
+  - edge AI
+  - RDK
+  - reproducibility
+  - model deployment

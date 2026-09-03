@@ -1,0 +1,381 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "comment": "Deterministic release-source inventory. No downloaded dependencies, models, vendor binaries or installed environment are represented. Timestamp is the initial metadata-generation epoch for this release.",
+    "created": "2026-09-03T09:30:04Z",
+    "creators": [
+      "Tool: rdk-frontier-lab-build-metadata-0.1.0",
+      "Person: Xiaomiju-x"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/Xiaomiju-x/rdk-frontier-lab/spdx/b6260ae35332df03901832a83a5b0a83cde200d02a8c2ef704af0367029c5e0e",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-000",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ccbc558a8c834ea6014d6d39a7374f31d2ac53afb200d16e4a5916164f59aeb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "34f8ac1b3c08f7805f0d971f9066fe6e19734809"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./examples/geometry_demo.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-001",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "23c3a1dac25999fad4393f9ea4afecf21a52b8c581ae1a47fe85c9c485d66175"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8b26b9ca69e12955821d6bdc4a30c3593580a025"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/__init__.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-002",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b76c723ea0ae3c4da1799e145c9199847b95a639"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/__main__.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-003",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5269fee195325d2f0473da542b56a8b5de2345cf2832ea5681c1a53eba5f4a57"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f8ec530e5c818ccaa31b41b63894341d6ab86175"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/catalog.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-004",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "024bb002d23ade55e5197aba3b96463fb3bda49ee73acca25c3ef72f41335884"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "259163c80e97bde7750e8f51d57ebf3c140e71fc"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/cli.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-005",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "36e038ef33c9640ae0fbe197aa0a8a1b2cbc056bf7e46031ba060e6193d9d843"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5f821f20fe4834a93c2256c5000ea0183b64249e"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/contracts.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-006",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4c75b7b006285c0e80daa3e9b2f0b72892af2599382bfd7371a16494746867ab"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "af2f308051f92392fdfd1ea2bef8533ba219a486"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/data/catalogue.json",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-007",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b3e4e684912be90281f59c2a41436d89dd1fe4120954938d8414d8c5c4a40b7d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d398be12bf194844f0e1e13063afc63b103b160b"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/data/demo_fixture.json",
+      "licenseConcluded": "CC0-1.0",
+      "licenseInfoInFiles": [
+        "CC0-1.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-008",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "226b76f1af52b2fb84a61aa447a31eb6099d2ac6c2ac1822441ddcf8ee482d05"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "37c68a967ef63ff5e596d7dfc74d84382aebc193"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/demo.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-009",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2f1b984a7527b0f7e7ce32d3be40bd7e570c3fc08defb80aa73e3160bea80432"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1fa3c38d68226a9f0c4037fe099c733ca87bc1f7"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/geometry.py",
+      "licenseConcluded": "MIT",
+      "licenseInfoInFiles": [
+        "MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-010",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d99a136197d3dee99d5a6a6aef904f2e83c27f1edb421a3e2ed718f7ab7f18f0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "95838833418813aba8eb6246be1f98ecb97d8ce8"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/io.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-011",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e244e67d53965bf8e1784ddafd3e4533ed8bd15f11ed913b0d123ad2627c8e5b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ea736dabb2aa36bbaacf520b6cb19c26a8164a1a"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/numerics.py",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-012",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./rdk_lab/py.typed",
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-013",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ea9452a2f9b8222eb548b8567f2ef9c9d03b102d21a6dae96ad9d18e84a46a44"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8fe4eab30e18715884b69b13bf1edb59a073d77a"
+        }
+      ],
+      "copyrightText": "2026 Xiaomiju-x",
+      "fileName": "./recipes/weighted_kabsch_6d/neural_reference.py",
+      "licenseConcluded": "MIT",
+      "licenseInfoInFiles": [
+        "MIT"
+      ]
+    }
+  ],
+  "name": "rdk-frontier-lab-0.1.0-public-source",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package",
+      "comment": "Core runtime dependency set is empty. Optional NumPy and the source-only neural reference's PyTorch are not bundled; inspect their own distribution metadata when installing them.",
+      "copyrightText": "2026 Xiaomiju-x",
+      "downloadLocation": "https://github.com/Xiaomiju-x/rdk-frontier-lab",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0 AND MIT AND CC0-1.0",
+      "licenseDeclared": "Apache-2.0 AND MIT AND CC0-1.0",
+      "licenseInfoFromFiles": [
+        "Apache-2.0",
+        "MIT",
+        "CC0-1.0"
+      ],
+      "name": "rdk-frontier-lab",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "17f35a3786b76bbc9350c70ea5ef3e1b5bb93952"
+      },
+      "versionInfo": "0.1.0"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-Package",
+      "relationshipType": "DESCRIBES",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-000",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-001",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-002",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-003",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-004",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-005",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-006",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-007",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-008",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-009",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-010",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-011",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-012",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-013",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

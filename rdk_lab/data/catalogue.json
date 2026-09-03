@@ -1,0 +1,840 @@
+{
+  "as_of": "2026-09-03T16:36:05+08:00",
+  "counting_unit": "registry_entry_not_unique_model_or_success_count",
+  "entries": [
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "open_vocabulary_detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O1",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "YOLOWorld",
+      "observed_status": "DEFER_LICENSE",
+      "scope_note": "RDK sample is Apache-2.0 but upstream YOLO-World is GPL-3.0 and the compiled artifact terms are not explicit; do not redistribute"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "vision_language_retrieval",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O2",
+      "intended_targets": [
+        "x5",
+        "s100"
+      ],
+      "name": "CLIP_SigLIP",
+      "observed_status": "X5_CLIP_HYBRID_AND_S100_SIGLIP_VISION_SMOKE_PASS",
+      "scope_note": "X5 official CLIP passed with BPU image encoder + CPU ONNX text encoder + CPU cosine; S100 official SigLIP passed both BPU vision submodels, but its sample has no text encoder and does not establish full retrieval"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "ocr",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O3",
+      "intended_targets": [
+        "x5",
+        "s100"
+      ],
+      "name": "PaddleOCR_cross_generation",
+      "observed_status": "X5_PPOCRV3_AND_S100_PPOCRV6_BPU_SMOKE_PASS",
+      "scope_note": "X5 official v3 and S100 official v6 detector+recognizer file tasks passed. Both preserve and safely clip raw out-of-bounds DB boxes; no labelled CER/H-mean is claimed, and v6-on-X5 remains a separate conversion gate"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "prompt_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O4",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "MobileSAM_EfficientSAM",
+      "observed_status": "X5_MOBILESAM_AND_EFFICIENTSAM_DUAL_BPU_SMOKE_PASS",
+      "scope_note": "Both official dual-BPU packages matched their repository reference masks; EfficientSAM decoder bakes two fixed points and is not runtime-interactive; dataset, stress, clean-rebuild and independent FP parity remain open"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "video_action_recognition",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O5",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "3DResNet18",
+      "observed_status": "S100_BPU_TASK_PASS",
+      "scope_note": "Official fixture Top-1 archery=0.994787; 50-run smoke passed; stress and host FP parity remain open"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "speech",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O6",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "Paraformer_CTC_KWS",
+      "observed_status": "KWS_CTC_AND_PARAFORMER_INDEPENDENT_TECHNICAL_BPU_PASS",
+      "scope_note": "All three local-WAV hybrid tasks passed on Nash-e BPU. Paraformer reported 1/28 character error on two labelled fixtures; each lane keeps its own narrow accuracy and redistribution gates, including unresolved HBM revision/AISHELL terms for Paraformer"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "open_set_detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O7",
+      "intended_targets": [
+        "x5",
+        "s100"
+      ],
+      "name": "DOSOD",
+      "observed_status": "X5_DOSOD_L_INT8_BPU_SMOKE_PASS_INTERNAL_ONLY",
+      "scope_note": "Official X5 BPU sample reproduced 12 finite deterministic boxes and the committed demo render byte-for-byte. No GT/mAP/generalization claim; Apache deployment + GPL training linkage and unresolved exact weight chain keep it internal-only, and S100 requires its own HBM conversion"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "image_video_vlm",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O8",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "SmolVLM2_256M",
+      "observed_status": "HOST_TASK_OFFICIAL_ONNX_AND_X5_CPU_VISION_PARITY_PASS_INTERNAL_EVALUATION_ONLY",
+      "scope_note": "Official 256M checkpoint generated correct first-party image/video fixture answers on RTX4050 and CPU. The unchanged official vision graph also passed a real X5 CPU 2+10 file task with byte-deterministic outputs and host-reference allclose/cosine 0.9999999999990098; p50 was 6471.737 ms. This is vision-partition CPU portability only, not full VLM or BPU. Full generate export remains blocked and mixed unpinned training-data lineage keeps use internal-only."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "dense_optical_flow",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O9",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "PWCNet",
+      "observed_status": "X5_PWCNET_BPU_FILE_PAIR_SMOKE_PASS",
+      "scope_note": "Official D-Robotics mono_pwcnet, not rdk_model_zoo; dense flow and official-render parity passed, but fixture has no GT flow so EPE/accuracy is not claimed"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "person_retrieval_embedding",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O10",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "ReID",
+      "observed_status": "X5_REID_BPU_EMBEDDING_RETRIEVAL_SMOKE_PASS_INTERNAL_ONLY",
+      "scope_note": "Official ROI-resizer BPU graph produced deterministic 512-D embeddings; the constructed ranking is descriptive only, with no identity accuracy claim, and identifiable fixtures/embeddings remain internal-only"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "stereo_depth",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O11",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "StereoNet_V2_5",
+      "observed_status": "X5_STEREONET_BPU_SMOKE_PASS_ALIGNMENT_WARNING",
+      "scope_note": "Official two-input BPU graph produced deterministic dense disparity/depth and passed fixed arithmetic; neural-only HRT averaged 62.747 ms, but no dense GT exists and the ORB alignment diagnostic failed the 1 px quality suggestion, so no depth or calibration accuracy is claimed"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "pointcloud_3d_detection_and_2d_detection_fallback",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O13",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "CenterPoint_request_FCOS_fallback",
+      "observed_status": "X5_CENTERPOINT_BLOCKED_OFFICIAL_PLATFORM_FCOS_BPU_FALLBACK_PASS",
+      "scope_note": "The current official CenterPoint table excludes X5, so no X5 3D claim was fabricated. The official FCOS EfficientNet-B0 fallback ran on X5 BPU with six deterministic boxes and 22.560 ms full-task p50; no GT/mAP claim, exact weight lineage and HBRT version-matched rebuild remain open."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "pointcloud_3d_detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O14",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "CenterPoint_PointPillar_nuScenes",
+      "observed_status": "S100_CENTERPOINT_BPU_FILE_10X_PASS_INTERNAL_NONCOMMERCIAL_ONLY",
+      "scope_note": "Official S100 BPU graph and 12-file point-cloud chain passed 2+10 with 1786 byte-deterministic finite boxes per task; graph-only default-input perf was 14.4 ms and full-task p50 was 1449.5 ms. No GT/mAP/NDS/class semantics; nuScenes-derived fixtures and HBM/wrapper assets remain internal noncommercial pending review."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "multi_object_tracking",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O15",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "TROS_MOT_YOLO26s_ByteTrack",
+      "observed_status": "X5_O15_TROS_MOT_BYTETRACK_FILE_SMOKE_PASS_INTERNAL_ONLY",
+      "scope_note": "Official X5 YOLO26s BPU detector plus CPU ByteTrack passed a 30-frame file task 2+10 with 10/10 byte-identical CSVs, 4 track IDs and 22.239 pipeline FPS p50. No MOT GT exists, so no MOTA/HOTA/IDF1/mAP claim; exact weight-training dataset and fixture-photo rights keep assets internal-only."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "lane_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O16",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "LaneNet_S100",
+      "observed_status": "S100_O16_LANENET_BPU_FILE_10X_PASS_INTERNAL_ONLY",
+      "scope_note": "Official S100-only LaneNet HBM passed real Nash-e BPU execution, 2+10 deterministic file tasks and a deterministic black-image boundary probe. End-to-end p50 was 18.510 ms and independent graph perf was 12.981 ms. The fixture has no GT, so no lane accuracy/mIoU/F1; weight and image asset rights keep it internal-only."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "pointcloud_part_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O17",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "PointNet_S100",
+      "observed_status": "S100_O17_POINTNET_BPU_FILE_10X_PASS_INTERNAL_ONLY",
+      "scope_note": "A complete official-tree audit found no S100/nash-e monocular-3D, BEV or multiview asset; DiffusionDrive is S100P/S600 only. The explicitly labelled PointNet fallback ran on real Nash-e BPU, passed 2+10 deterministic file tasks and rejected a zero-radius point cloud before BPU submission. End-to-end p50 was 4.161 ms and independent graph perf 1.422 ms. No GT, part accuracy or mIoU is claimed."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "body_pose_keypoints",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O18",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "YOLO11_Pose_S100",
+      "observed_status": "S100_O18_YOLO11_POSE_BPU_FILE_10X_PASS",
+      "scope_note": "Official 17-keypoint YOLO11-Pose ran on real Nash-e BPU. Its 2+10 file tasks were finite and byte-deterministic, end-to-end p50 16.195 ms and independent 500-frame graph perf 2.113 ms; corrupt input failed before BPU submission. The internal fixture has no GT, so no COCO AP/PCK or real-person pose-correctness claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "prompt_free_instance_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O19",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "YOLO11_Seg_S100",
+      "observed_status": "S100_O19_YOLO11_SEG_BPU_FILE_10X_PASS",
+      "scope_note": "Official prompt-free YOLO11-Seg ran on real Nash-e BPU and is distinct from promptable SAM lanes. The 2+10 task produced eight nonempty instance masks with raw/decoded/mask byte determinism, end-to-end p50 17.570 ms and independent 500-frame graph perf 2.114 ms; empty/corrupt images failed before BPU submission. No GT, mAP, mask AP or IoU claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "oriented_object_detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O20",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "YOLO26_OBB_S100",
+      "observed_status": "S100_O20_YOLO26_OBB_BPU_FILE_10X_PASS",
+      "scope_note": "The pinned official tree has no YOLO11-OBB path, so the exact negative evidence is retained and the official YOLO26-OBB S100 successor was executed. Real Nash-e BPU 2+10 tasks produced two non-axis-aligned boxes with raw/rrect/score/class/polygon byte determinism; end-to-end p50 was 87.687 ms (about 81.050 ms JPEG decode) and independent 500-frame graph perf 1.410 ms. The public-domain fixture has no GT and apparent class labels may be false, so no mAP, rotated IoU or semantic-correctness claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "frozen_vocabulary_open_set_instance_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O21",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "YOLOE11_Open_Vocabulary_S100",
+      "observed_status": "S100_O21_YOLOE11_OPEN_VOCAB_BPU_FILE_10X_PASS",
+      "scope_note": "The pinned official tree contains no YOLO-World path; its only real S100 Nash-e open-vocabulary candidate is prompt-free YOLOE11-Seg with a frozen 4,585-class vocabulary. Real BPU 2+10 tasks produced 25 nonempty masks and 21 unique class IDs all above COCO80, with raw/decoded determinism and p50 64.753 ms; independent 500-frame graph perf was 29.282 ms. This is not arbitrary runtime text prompting, has no GT, and official HBM/fixture/reference remain internal-only pending Ultralytics AGPL/Enterprise and asset review."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "monocular_relative_depth",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O22",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "Depth_Anything_V2_S100",
+      "observed_status": "S100_O22_DEPTH_ANYTHING_V2_BPU_FILE_10X_PASS",
+      "scope_note": "Official rdk_s Depth Anything V2 ran on the real S100 Nash-e BPU. The 2+10 file task was byte-deterministic with end-to-end p50 269.689 ms; independent 500-frame graph perf averaged 119.052 ms and sampled 100% BPU. The opaque 518x686 HBM variant and binary asset terms are unresolved, and the fur-seal fixture has no raw GT, so no AbsRel/RMSE/metric scale or scene-correctness claim is permitted. F3 host DAv2-Small results were not reused as a numerical golden."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "semantic_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O23",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "UnetMobileNet_S100",
+      "observed_status": "S100_O23_UNETMOBILENET_SEMANTIC_BPU_FILE_10X_PASS",
+      "scope_note": "The pinned official tree has no SegFormer, DeepLab, PIDNet or BiSeNet, so their negative evidence is retained and official UnetMobileNet is an explicitly named same-direction fallback. Its real Nash-e BPU 19-channel semantic graph passed 2+10 deterministically; end-to-end p50 was 145.204 ms and independent 500-frame graph perf 1.776 ms. The official Cityscapes street fixture has no GT here, contains privacy-sensitive people/plates, and upstream terms are noncommercial/no-redistribution; no mIoU, pixel accuracy or class-semantic claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "transformer_image_classification",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O24",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "ViT_CIFAR10_S100",
+      "observed_status": "S100_O24_VIT_CIFAR10_INT16_BPU_FILE_10X_PASS",
+      "scope_note": "After a pinned official-tree audit found no image restoration/super-resolution/denoising/deblurring/generative-image/keypoint-matching candidate and excluded S100P/S600-only Gemma4-E2B and DiffusionDrive, official ViT-CIFAR10 was selected as a distinct modern still-image classifier. Real Nash-e int16 BPU 2+10 passed at p50 8.791 ms; independent 500-frame graph perf averaged 6.943 ms. The named airplane Top-1 is only a functional fixture contract, not CIFAR-10 accuracy; HBM/training/fixture redistribution remains internal-only pending asset-specific review."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "specialized_cropped_license_plate_sequence_recognition",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O25",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "LPRNet_X5",
+      "observed_status": "X5_O25_LPRNET_BPU_FILE_10X_PASS",
+      "scope_note": "The pinned X5 tree has no restoration/super-resolution/denoise/deblur candidate; MODNet was then explicitly deferred because the official downloader has no URL and neither board resources nor the isolated workspace contain a matting model. Official LPRNet was selected under its exact cropped-plate-tensor identity, not as plate detection or general OCR. Real Bayes-e BPU 2+10 passed at p50 7.618 ms and independent 500-frame graph perf averaged 5.889 ms. A first 2D/4D output-contract mismatch failed closed and was corrected to live model metadata. There is no GT/accuracy claim; model, fixture and decoded plate value remain internal-only and an HBRT builder/runtime warning is retained."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "offline_locomotion_policy_tensor",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O26",
+      "intended_targets": [
+        "x5"
+      ],
+      "name": "HIMLoco_X5",
+      "observed_status": "X5_O26_HIMLOCO_BPU_FILE_10X_PASS",
+      "scope_note": "The pinned official X5 tree has no distinct face/hand/gesture/action-recognition behavior model and a duplicate human-pose family was rejected. Official HIMLoco was selected under its exact 270-value observation-history to 12-value action-tensor identity. Real Bayes-e BPU 2+10 file inference passed at p50 1.770 ms; independent 500-frame graph perf averaged 0.372 ms. There is no reference action, simulation, observation builder, actuator, robot or control claim; model/fixture use remains internal noncommercial with no redistribution."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "edge_llm_generation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "official",
+      "id": "O27",
+      "intended_targets": [
+        "s100"
+      ],
+      "name": "DeepSeek_R1_Distill_Qwen_1_5B_S100",
+      "observed_status": "DEFER_SYSTEM_ION_AND_RUNTIME_GATE_NOT_EXECUTED",
+      "scope_note": "The official D-Robotics Q8/1024 S100 HBM was downloaded to the host cache and locked at 1,881,916,480 bytes / SHA-256 94ec28f2...f4e87. Read-only S100 audit found the vendor cpu_first ION layout, no hobot_xlm and no TROS Humble. Official execution requires a DTB change to bpu_first and reboot, so no board transfer, model load or BPU run was attempted without a separate system-mutation authorization. Vendor throughput remains reference metadata, not a local measurement."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C1",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "D_FINE",
+      "observed_status": "S100_S600_REAL_BPU_NUMERIC_STOP_LOSS_X5_NATIVE_EXPORT_OPERATOR_STOP_LOSS",
+      "scope_note": "S100/S600 default and sole accuracy-first remediation failed frozen real-BPU semantics. S600 remediation HBM d9ccbfe0...afd53 is 29859264 bytes; BPU P50 8.894 ms, finite deterministic outputs and clean exit, label multiset differs; Infinity is comparator sentinel, not overflow. X5 fresh Torch matched canonical golden exactly, but real opset11 export failed at aten::grid_sampler (exporter supports from opset16), no ONNX/OE/BIN/BPU. No graph surgery or threshold change; advance EfficientAD/RTMPose."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "semantic_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C2",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "PIDNet_S",
+      "observed_status": "HOST_SYNTHETIC_EXPORT_SPIKE_PASS_DEFER_LICENSE",
+      "scope_note": "Static ONNX and CPU/RTX/ORT parity passed with deterministic untrained weights only; official weights/data not downloaded and no accuracy claim is allowed"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "pose",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C3",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "RTMPose_WholeBody",
+      "observed_status": "X5_S600_BPU_NUMERIC_FAIL_S600_UNIQUE_MAX_INT16_SIMULATOR_STOP_LOSS_S100_NOT_RUN",
+      "scope_note": "Frozen graph/calibration/heldout/thresholds unchanged. Default same-input six-stage diagnosis first failed at calibrated; BC raw hash matched prior S600 BPU. Unique S600 max/INT16 candidate compiled 24420624-byte HBM but PTQ and BC each only 4/133 exact, BC max error 35px, NRMSE 0.13040/0.14014. Original production comparator and CPU executor metadata independently rechecked. Three exact containers absent and OE lock free. This recipe stopped with no new board deployment; no threshold relaxation or repeated parameter search. Do not inherit this target result onto S100/X5. Dataset task evaluation remains separate."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "ocr",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C4",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "PP_OCRv6_static",
+      "observed_status": "S100_PPOCRV6_BPU_TASK_PASS_REDISTRIBUTION_BLOCKED",
+      "scope_note": "Official S100 detector+recognizer Nash-e full file chain passed 2+10 with clipping and deterministic output; no authoritative labels/CER/H-mean, exact checkpoint/export provenance and fixture/font terms remain open, and X5 conversion is not implied"
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "anomaly_detection",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C5",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "EfficientAD",
+      "observed_status": "X5_S600_COMPILE_ACCEPTED_REAL_BPU_NUMERIC_FAIL_S600_GATE_A_RANGE_FAIL_S100_CAPACITY_READY",
+      "scope_note": "First-party synthetic teacher. X5 layout config and exact scalar metadata repaired without changing model/thresholds; X5 and S600 each completed 160 real BPU inferences, finite/deterministic/clean, but cosine/score/mask failed. Model-level P50 26.094/7.775ms are not successful benchmark results. S600 compiled output cap 0.067 is below frozen thresholds; fixed-seed 64-calibration/32-probe Gate A max coverage failed, no resampling/remediation compile. S100 exact cache GC completed with verified host backup and capacity restored; no official teacher or real-factory accuracy claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "time_series",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C6",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "Tiny_Time_Mixers",
+      "observed_status": "R3_HOST_TORCH_PASS_EXPORT_STOP_LOSS_TWO_OFFICIAL_ROUTES_FAILED_NO_ONNX",
+      "scope_note": "The immutable Apache-2.0 Granite TTM R3 snapshot ea17cfd loads only as TinyTimeMixerForDecomposedPrediction. First-party 512-to-30 Torch CPU/RTX golden, quantile semantics, deterministic replay, synthetic task and fail-close gates passed. Dynamo opset-18 failed on missing aten.median.dim ONNX lowering and legacy opset-17 failed on the upstream Tensor round() path; the two-route stop-loss forbids graph surgery. No R3 ONNX exists, so checker/ORT/board compile/BPU are NOT_RUN; prior R2.1 artifacts remain separate and are not relabelled."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "speech",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C7",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "Moonshine_Whisper",
+      "observed_status": "STANDARD_ONNX_BPU_ROUTE_STOP_LOSS_OFFICIAL_ASSETS_ARE_ORT_FLATBUFFER",
+      "scope_note": "The locked tiny-streaming official neural components are ORT FlatBuffers, not standard ONNX, and the locked source has no exact matching export recipe; the float safetensors route is a different architecture/revision and cannot be substituted. Independent tri-board fail-close manifests and first-party file-audio encoder gates are ready, but compile_ready=false and OE/boards/BPU are NOT_RUN. Prior host/S100 CPU and X5 determinism-negative evidence remains separate."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "vision_language",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C8",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "SigLIP2",
+      "observed_status": "S600_FULL_VISION_CPU_PASS_COMPILE_PASS_QUANTIZED_BC_NUMERIC_FAIL_STOP_LOSS_NO_BPU",
+      "scope_note": "Original full378MB vision tower,64cal,eightheldout/cachedtext/gates unchanged. Compile060158Z accepted104791536B independent Nash-p HBM0ef7adee...0d374; source/BC062800Z each2x8 CPU calls: source6/6PASS, BC6/6FAIL(mincos.077792,NRMSE5.87715,dualRecall.125), no BPU deployment. New real S600 CPU064400Z176calls/160timed/168sink/180files accepted, E2E P50/P90/P99 58.348/58.599/59.114ms, 4008CPU profile nodes, six original gatesPASS. Receipt3232f8e7...accf5 and clean double snapshots. CPU fallback is not BPU benefit or public accuracy; no hardware-fault claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "prompt_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C10",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "NanoSAM",
+      "observed_status": "HOST_MOBILESAM_TEACHER_FALLBACK_PASS_NANOSAM_RESNET18_ASSET_BLOCKED",
+      "scope_note": "The pinned NVIDIA NanoSAM ResNet18 and pre-exported decoder Drive links are inaccessible and retained as negative evidence. A byte-identical official MobileSAM teacher fallback passed native RTX and raw ONNX CPU/CUDA prompt-to-mask gates on a first-party CC0 fixture; full native p50 was 59.672 ms and exported mask parity IoU 0.9999815. TensorRT and both RDK boards remain NOT_COMPILED_NOT_RUN; this must not be called a trained NanoSAM ResNet18 reproduction."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "lidar_range_image_segmentation",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C11",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "RangeNetPP_CC0_Micro",
+      "observed_status": "HOST_CC0_MICRO_TRAINED_NATIVE_ONNX_ORT_PASS_OFFICIAL_WEIGHT_LICENSE_BLOCKED",
+      "scope_note": "PRBonn/Qualcomm RangeNet++ source chains were pinned, but the official DarkNet53 checkpoint was not downloaded or executed because its terms follow SemanticKITTI CC BY-NC-SA. A clearly renamed first-party CC0 154,836-parameter RangeImageSegMicro passed native CPU/RTX and ORT CPU/CUDA on synthetic geometry; synthetic validation mIoU 0.999614 is not SemanticKITTI or real-LiDAR accuracy. Boards remain NOT_COMPILED_NOT_RUN and ConvTranspose is the first compiler risk."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "video_understanding",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C12",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "VideoMAE_V2_ViT_S",
+      "observed_status": "SAFE_ONE_SHOT_HOST_GATE_PASS_RESOURCE_CONDITIONAL_COMPILE_NOT_RESERVED_NOT_RUN",
+      "scope_note": "Unchanged16-frame NCTHW graph/three target packages/eight original calibration/heldout remain frozen. Real official field schema passed; operators,compile and BPU remain untested. New safe wrapper and independent review26/26+ValidateOnly passed, preserving original activation max1. Requires free OE lock and52GiB available memory before reserving attempt; previous50.245GiB was insufficient. No lowering memory guard or graph change. No Kinetics/camera/real-video claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "multiview_lidar_bev_fusion",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C13",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "BEVFusion_CC0_Micro",
+      "observed_status": "HOST_EXPORT_AND_X5_CPU_PARITY_PASS_UPSTREAM_NUSCENES_ASSETS_BLOCKED",
+      "scope_note": "MIT HAN, NVIDIA CUDA-BEVFusion and OpenMMLab sources were pinned, but all nuScenes-derived weights/fixtures were not downloaded or executed because official terms are noncommercial and extend to derivatives. A clearly renamed first-party CC0 36,240-parameter orthographic multi-view+LiDAR BEV micro passed native CPU/RTX, ORT CPU/CUDA and unchanged X5 CPU 2+100. X5 file-task p50 was 5.264 ms, host-reference NRMSE 1.411e-7 and argmax/synthetic mIoU both 1.0. This is not official BEVFusion or real-driving accuracy; both RDK BPU targets remain NOT_COMPILED_NOT_RUN."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "rgbd_cad_6d_pose",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C14",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "FoundationPose_CC0WeightedKabsch6D",
+      "observed_status": "HOST_X5_S100_CPU_CC0_6D_POSE_PARITY_PASS_OFFICIAL_FOUNDATIONPOSE_LICENSE_BLOCKED",
+      "scope_note": "Official NVLabs FoundationPose/nvdiffrast are noncommercial for third parties; Isaac ROS retains a conflicting proprietary renderer notice and NGC model metadata names inconsistent licenses. Official weights/examples/data were therefore not downloaded or executed. The explicitly renamed first-party MIT/CC0 CC0WeightedKabsch6D trained a 1,921-parameter confidence scorer and passed native CPU/RTX plus ORT CPU/CUDA. Its unchanged scorer plus exact NumPy Kabsch then passed real X5 and S100 CPU 2+100 file-to-pose gates: p50 6.726/3.016 ms, deterministic 100/100, host pose max-abs below 3e-9 rotation and 1.1e-10 m translation. Oracle correspondences and synthetic ADD 1.399 mm remain only a geometry sanity gate; this is not FoundationPose, BOP, BPU or real-world accuracy."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "generalist_robot_policy_source_subgraph",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C15",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "GR00T_N1_7_Action_Encoder_Source_Probe",
+      "observed_status": "BOUNDED_SOURCE_SUBGRAPH_PASS_FULL_GR00T_BLOCKED",
+      "scope_note": "Full GR00T N1.7 was not downloaded or run: official guidance calls for 16 GB+ VRAM, the checkpoint plus gated Cosmos backbone is 10.978 GiB before activations, and repository/model-card license terms conflict. A precisely named bounded probe used only the official Apache-2.0 MultiEmbodimentActionEncoder source with deterministic untrained CC0 initialization. Its static 51,712-parameter ONNX passed Torch/ORT CPU/CUDA parity and fail-close, but it is not a GR00T checkpoint, policy or action predictor; both RDK boards remain NOT_COMPILED_NOT_RUN."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "multi_object_video_memory_routing_source_subgraph",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C16",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "SAM3_1_Object_Multiplex_Routing_Probe",
+      "observed_status": "BOUNDED_OFFICIAL_ROUTING_SUBGRAPH_PASS_FULL_SAM3_1_BLOCKED",
+      "scope_note": "Current official SAM 3.1 Object Multiplex source was selected after checking SAM 2.1/SAM 3 succession. The manual-gated 3.50 GB checkpoint and gated SA-Co datasets were not accepted, downloaded or executed under the custom SAM License. Only the unmodified zero-parameter MultiplexState mux/demux and lifecycle source boundary ran on a CC0 fixture; static ONNX and Torch/ORT CPU/CUDA routing parity were exact. This is not image/video segmentation, detection or tracking inference; both boards remain NOT_COMPILED_NOT_RUN and CPU is recommended for this tiny route."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "image_restoration_super_resolution",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C17",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100",
+        "s600"
+      ],
+      "name": "Ascend_SwinIR_S_X2",
+      "observed_status": "DEFAULT_AND_UNIQUE_ACCURACY_CANDIDATE_NUMERIC_FAIL_STOP_LOSS_PAUSED",
+      "scope_note": "Prior S600 CPU baseline PASS; default real BPU latency improved but PSNR drops5.472/7.294/6.866/6.836dB failed0.3dB. Exact one-shot accuracy candidate072413Z compiled118193000-byte Nash-p HBM; PTQ drops0.436/0.679/0.613/0.682dB and BC0.440/0.687/0.621/0.688dB still fail unchanged0.3dB. Finite/deterministic and other raw/SSIM/seam gates pass, not overall numerical PASS. Collection0009 accepted38files272833033bytes, all3containers absent/OElockfree. Unique reservation consumed, no second remedy and no new BPU run. User paused2026-09-03 16:36; internal-only."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "asr_language_emotion_audio_event",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "frontier",
+      "id": "C18",
+      "intended_targets": [
+        "host",
+        "x5",
+        "s100"
+      ],
+      "name": "SenseVoiceSmall_V1_Multitask",
+      "observed_status": "OFFICIAL_SENSEVOICE_SMALL_V1_HOST_AND_X5_S100_CPU_NEURAL_CORE_PARITY_PASS_BPU_NOT_COMPILED_LICENSE_REVIEW_REQUIRED",
+      "scope_note": "The exact official 234M-parameter SenseVoiceSmall v1.0.0 passed strict first-party CC0 host WAV tasks and both standard ONNX graphs. Its unchanged static graph plus 936 MB sidecar then passed project-local ARM64 ORT CPU 2+10 on X5/S100 at p50 1401.660/396.388 ms, exact raw/deduplicated CTC IDs and identical cross-board output hash; BPU remained unused. This is precomputed-feature neural-core CPU portability, not board WAV/microphone inference, accuracy or BPU. The custom model license, training-data, calibration and BPU operator/memory gates remain open."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F1",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "SAM3_DINOv3_EdgeTAM",
+      "observed_status": "HOST_EDGETAM_OFFICIAL_WEIGHT_AND_STATIC_ONNX_PASS_TEMPORAL_EXPORT_DEFER",
+      "scope_note": "Official EdgeTAM weight passed CPU/RTX video-mask contracts and raw single-frame plus prompt-to-memory ONNX on ORT CPU/CUDA. Fixed-S7 temporal export stopped after two exporters at complex64 RoPE with no graph surgery. Point-prompt full-sequence CPU/CUDA mask IoU falls to 0.66045 at the occlusion frame; training mix provenance remains incomplete and no board claim exists."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F2",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "CoTracker3_BootsTAPIR",
+      "observed_status": "HOST_BOOTSTAPIR_GOLDEN_STATIC_ENCODER_PASS_COTRACKER3_LICENSE_DEFER",
+      "scope_note": "Meta CoTracker3 code/checkpoints are CC-BY-NC-4.0 and were not downloaded/executed in this work context. Apache-2.0 Google DeepMind causal BootsTAPIR was selected: real CPU/RTX online tracking passed a CC0 synthetic task gate, while strict 0.01 px numeric parity retained a diagnostic FAIL. Only the official fixed-frame feature encoder was exported to ONNX/ORT CPU/CUDA; no full-tracker ONNX, public accuracy or board claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F3",
+      "intended_targets": [
+        "host",
+        "s100",
+        "s600"
+      ],
+      "name": "DepthAnything3_DepthAnythingV2",
+      "observed_status": "HOST_GOLDEN_PASS_S100_INT16_AND_MIXED_REAL_BPU_NUMERIC_FAIL_TWO_ROUTE_STOP_LOSS_S600_NOT_ATTEMPTED",
+      "scope_note": "DA3-Small CPU/RTX passed but static export stopped at aten::cartesian_prod. DAv2-Small S100 INT16 HBM 63199736 bytes ran 200 times: P50 47.742ms, NRMSE0.2864/Spearman0.8702 FAIL. Mixed HBM32199080 bytes SHA15f2e933...c64d also ran200: P503.154ms, NRMSE0.8144/Spearman0.4813/gradient0.4708 FAIL. Both frozen unchanged-graph routes exhausted and stopped, not pending. Authoritative review: evidence/integration/s100_dav2_mixed_direct/dav2-s100-mixed-direct-20260902T065034Z/s100_mixed_board02_failure_review.json. No BPU PASS or S600 deployment claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F4",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "VGGT_MASt3R_SLAM",
+      "observed_status": "HOST_LICENSED_CLASSICAL_SPARSE_SFM_FALLBACK_PASS_PRIORITY_MODELS_BLOCKED",
+      "scope_note": "VGGT commercial weights remain gated and its original weights are noncommercial; MASt3R-SLAM code/weights are CC-BY-NC-SA, so neither priority model was downloaded or executed. The explicitly named OpenCV-SIFT Essential-Matrix Sparse SfM fallback produced four poses, 1,123 sparse points and sparse depth files on a first-party CC0 fixture. It passed 2+10 determinism, 12/12 fail-close and a fixed-N triangulation ONNX four-backend A/B. This is classical arbitrary-scale sparse SfM only, not VGGT, MASt3R-SLAM, dense reconstruction, loop closure, public accuracy or board deployment."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F5",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "LightGlue_SuperPoint",
+      "observed_status": "OPEN_SUPERPOINT_STAGE_A_S100_COMPILE_PASS_REAL_BPU_NUMERIC_FAIL_STOP_LOSS",
+      "scope_note": "Original restricted SuperPoint+LightGlue remains host-local only. Separate MIT open-SuperPoint Stage-A compiled to independent 9948712-byte Nash-e HBM SHA38281df5...a6a1; actual S100 board03 completed100 timed iterations, P506.516ms, but coordinate Jaccard min0.45869, descriptor cosine0.94398 and pair Jaccard0.23928 fail frozen semantics. BPU idle/no residue. Receipt: evidence/integration/s100_open_superpoint_direct/open-superpoint-s100-direct-20260902T075850Z/board03_acceptance.json. No open end-to-end LightGlue, public accuracy or BPU PASS claim; no longer compile-pending."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F6",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "SmolVLA",
+      "observed_status": "HOST_OFFICIAL_CHECKPOINT_FILE_TO_FILE_PASS_ONNX_AND_LICENSE_DEFER",
+      "scope_note": "The exact 450,046,176-parameter official SmolVLA base checkpoint strictly loaded and produced deterministic normalized 50x6 action chunks to a local file sink on CPU and RTX4050. Task-level CPU/GPU parity passed (MAE 0.002909, cosine 0.999964), while the stricter 0.005 max-abs diagnostic failed at 0.012139 and is retained. Both legacy and Dynamo ONNX exporters failed under the two-route stop-loss. The checkpoint declares no license, the complete training-data license map is absent, and no physical units, robot control, board deployment, task success or redistribution is claimed."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F9",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "GR00T_N1_5_N1_7",
+      "observed_status": "BOUNDED_SOURCE_SUBGRAPH_PASS_FULL_MODEL_BLOCKED",
+      "scope_note": "C15 validates only an Apache-2.0 official action-encoder source subgraph with untrained first-party initialization. Full N1.7 remains blocked by 16 GB+ inference guidance, required gated Cosmos backbone, 10.978 GiB combined weight files and conflicting license metadata; no full weights, policy semantics, robot task or board claim."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F10",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "pi0_7_pi0_5_OpenPI",
+      "observed_status": "HOST_WEIGHT_FREE_FLOW_INTEGRATOR_PASS_FULL_MODELS_DEFERRED",
+      "scope_note": "As of 2026-08-31 pi0.7 is the latest official model but has no released official code or weights. OpenPI pi0.5 remains the latest open implementation; its 11.587 GiB checkpoint lacks adjacent license metadata, training-data terms are incomplete, and official inference requires >8 GB while the RTX4050 has 6 GB, so no full model was downloaded or executed. Only a zero-parameter fixed 10-step Euler integration boundary with externally supplied velocity tensors passed exact four-backend parity; it is not a learned policy, VLA prediction, action quality or board result."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F11",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "V_JEPA_2_1",
+      "observed_status": "PASS_HOST_WEIGHT_FREE_TEMPORAL_BOUNDARY_ONLY_VJEPA21_CHECKPOINT_DEFERRED",
+      "scope_note": "The latest official V-JEPA 2.1 source was pinned, but the smallest 80M checkpoint is 1.664 GB with no checkpoint-specific license and the VisionMix163M training-data license map is incomplete, so no checkpoint was downloaded or run. An accurately named first-party weight-free TubeletStatisticsEncoder boundary passed CPU/RTX/ORT CPU/CUDA 2+20, exact repeats, 12/12 fail-close and a one-route static ONNX export. Synthetic motion metrics validate only the temporal tensor contract; this is not V-JEPA, a learned representation or a world model."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F12",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "SANA_Video_2_0_5B",
+      "observed_status": "PASS_HOST_OFFICIAL_SOURCE_SUBGRAPH_ONLY_FULL_SANA_VIDEO2_DEFERRED",
+      "scope_note": "The latest public official target is SANA-Video 2.0 5B 720p. Its 17.872 GB transformer checkpoint alone is 2.78x the RTX4050 VRAM and the Gemma/LTX dependency terms plus training-data rights are not closed, so no complete checkpoint was downloaded or executed. The exact official BlockAttentionResidual attend core, without weights and not a generator, passed CPU/RTX/ORT CPU/CUDA 2+20, numerical/oracle contracts, 12/12 fail-close and a one-route static ONNX export. No image/video or quality claim is allowed."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F13",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "DINOv3_ViT_S16",
+      "observed_status": "PASS_HOST_OFFICIAL_SOURCE_SUBGRAPH_RUNTIME_ONLY_DINOV3_CHECKPOINT_AND_STATIC_ONNX_DEFERRED",
+      "scope_note": "The latest official DINOv3 ViT-S/16 checkpoint is only 86.4 MB and resource-feasible on RTX4050, but it requires an authorized manual license gate and its LVD-1689M data map is incomplete, so no weight was downloaded or executed. The exact official-source weight-free axial RoPE generation/application core passed Torch CPU/RTX plus ORT CPU/CUDA 2+20, independent NumPy/invariant gates and 12/12 fail-close. ONNX checker/runtime A/B passed, but two standard exports emitted invalid static token metadata dimension 0, so deployment is deferred without graph surgery. This is not an encoder or learned DINOv3 feature result."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F14",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "MobileCLIP2_S0",
+      "observed_status": "PASS_HOST_OFFICIAL_README_WEIGHT_FREE_CORE_ONLY_MOBILECLIP2_CHECKPOINT_DEFER_LICENSE",
+      "scope_note": "The latest official Apple MobileCLIP2-S0 checkpoint is public, ungated and resource-feasible, but the Apple ML Research Model License restricts it to noncommercial research and excludes product development; DFNDR-2B is CC-BY-NC-ND with unresolved source-image rights. No weight was downloaded or executed in this RDK ecosystem/product-development context. Only the MIT README normalized dual-embedding similarity equations passed Torch/ORT CPU/CUDA 2+20, oracle/invariants, 14/14 fail-close and a static ONNX. It is not either encoder, learned features, retrieval accuracy or MobileCLIP2 deployment."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F15",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "NVIDIA_MambaVision_T_1K",
+      "observed_status": "PASS_HOST_PERMISSIVE_UPSTREAM_CORE_ONLY_NVIDIA_MAMBAVISION_DEFER_LICENSE",
+      "scope_note": "The current NVIDIA MambaVision source and smallest public 31.8M-parameter T checkpoint are resource-feasible, but NVIDIA code is noncommercial, checkpoint metadata conflicts between CC-BY-NC-SA and NVIDIA-NC terms, and ImageNet rights are not closed. No NVIDIA code or weight was downloaded for execution. The accurately named Apache-2.0 state-spaces/mamba selective_scan_ref fixed recurrence passed Torch CPU/RTX and ORT CPU/CUDA 2+20, NumPy/invariant gates, 16/16 fail-close and one static ONNX route; this is not MambaVision, learned features or classification."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F16",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "Apple_FastVLM_FastViTHD_RepMixer",
+      "observed_status": "PASS_HOST_AND_X5_S100_CPU_OFFICIAL_SOURCE_WEIGHT_FREE_REPMIXER_SUBGRAPH_ONLY",
+      "scope_note": "The public FastVLM-0.5B checkpoint was not downloaded or executed because the Apple ML Research Model License is limited to noncommercial research and excludes product development; its heterogeneous training-data rights map is also incomplete. The exact official FastViTHD first-stage RepMixer primitive with deterministic non-trained coefficients passed Torch/ORT CPU/CUDA 2+20, an independent NumPy oracle, two static ONNX routes, 12/12 fail-close and unchanged X5/S100 CPU 2+10. Board p50 was 3.540/0.783 ms with exact shared output hash. This is not FastVLM, complete FastViTHD, learned features, semantic accuracy or BPU execution."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F17",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "Meta_SAM_Audio_DiT_Core",
+      "observed_status": "OFFICIAL_SOURCE_CORE_TORCH_CPU_CUDA_ONNX_ORT_PASS_FULL_CHECKPOINT_GATED_RESOURCE_BLOCKED_RDK_NOT_COMPILED_NOT_RUN",
+      "scope_note": "The minimum official SAM Audio checkpoint is manually gated and 5.101 GB before DAC-VAE/T5/PE-AV/ODE state, with no official 6 GB recipe, so it was not downloaded or run. A compact deterministic untrained instance of the exact pinned official DiTBlock/Attention/RMSNorm/SwiGLU/RoPE source passed Torch CPU/RTX and ORT CPU/CUDA 2+20, numeric parity, 6/6 fail-close and static ONNX. Default CUDA TF32 numeric failure is retained; canonical ORT only disables provider TF32. The custom SAM License, training-data rights and optional ImageBind noncommercial dependency remain open. This is not audio separation or full SAM Audio."
+    },
+    {
+      "bundled_full_upstream_model": false,
+      "direction": "exploratory_research",
+      "evidence_level": "maintainer_reported_private_run",
+      "group": "research",
+      "id": "F18",
+      "intended_targets": [
+        "host"
+      ],
+      "name": "NanoOWL_Audit_Google_OWLv2_Full",
+      "observed_status": "PASS_HOST_OFFICIAL_OWLV2_FULL_MODEL_NANOOWL_DEFER_PLATFORM",
+      "scope_note": "NanoOWL HEAD remains a Jetson Orin/TensorRT OWL-ViT implementation with no OWLv2 path and was not executed. The exact public Apache-2.0 Google OWLv2-base-patch16-ensemble checkpoint instead passed full-model Torch CPU/RTX and ORT CPU/CUDA 2+20, a 614 MB static ONNX, runtime text prompts, Top-10/argmax/box task parity, seven fail-close cases and CUDA provider proof. Default TF32 drift is retained; canonical ORT disables only provider TF32. This is OWLv2, not NanoOWL; training-data rights, public accuracy and RDK compilation remain open."
+    }
+  ],
+  "overlaps": [
+    {
+      "ids": [
+        "O3",
+        "C4"
+      ],
+      "reason": "The S100 PP-OCRv6 result is referenced by both programmes."
+    },
+    {
+      "ids": [
+        "C15",
+        "F9"
+      ],
+      "reason": "The same GR00T source-subgraph boundary is referenced twice."
+    }
+  ],
+  "publication_scope": "Metadata-only historical observations; no weights, raw fixtures, host endpoints or raw telemetry.",
+  "schema_version": 1
+}
