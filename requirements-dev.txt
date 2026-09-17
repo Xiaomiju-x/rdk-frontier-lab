@@ -1,5 +1,5 @@
 # Validation/build tooling only. The core package has no runtime dependencies.
-build==1.6.0
+build==1.6.1
 coverage==7.16.0
 jsonschema==4.26.0
 ruff==0.16.5
