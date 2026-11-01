@@ -3,7 +3,7 @@ build==1.6.0
 coverage==7.16.0
 jsonschema==4.26.0
 ruff==0.16.5
-setuptools==84.0.0
+setuptools==84.1.0
 wheel==0.48.0
 # NumPy 2.2 is the last branch here supporting the Python 3.10/3.11 CI jobs.
 numpy==2.2.6; python_version < "3.12"
